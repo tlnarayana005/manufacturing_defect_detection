@@ -1,0 +1,3 @@
+- Developed an AI-powered manufacturing defect detection system with deep learning and computer vision, achieving high classification accuracy on industrial defect datasets.
+- Built a full data preprocessing and augmentation pipeline, trained and compared ResNet50 and EfficientNet-B0 backbones, and evaluated using accuracy, precision, recall, F1-score, and confusion matrix.
+- Implemented Grad-CAM explainability and deployed an interactive Streamlit web application for defect detection, category prediction, confidence scoring, and explainable visualization.

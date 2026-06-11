@@ -1,0 +1,26 @@
+dataset:
+  raw_root: data/raw/mvtec
+  processed_root: data/processed
+  categories:
+    - metal_nut
+  image_size: 224
+  val_split: 0.12
+  test_split: 0.10
+  random_seed: 42
+training:
+  batch_size: 24
+  epochs: 24
+  learning_rate: 3e-4
+  weight_decay: 1e-5
+  model_name: resnet50
+  pretrained: true
+  device: cuda
+  freeze_backbone_epochs: 2
+  balance_classes: true
+  use_class_weights: true
+  mixed_precision: true
+  gradient_clip_norm: 1.0
+  early_stopping_patience: 4
+paths:
+  model_dir: models
+  output_dir: outputs
